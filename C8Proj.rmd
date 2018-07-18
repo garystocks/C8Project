@@ -82,7 +82,7 @@ A 10-fold cross validation is used to estimate accuracy. This splits the trainin
 
 A set of models are trained, including a linear model (linear discriminant analysis), nonlinear models (k-nearest neighbours and classification and regression trees) and advanced models (support vector machine and random forest).
 
-```{r train}
+```{r train, cache=TRUE}
 
 # Set control parameters
 control <- trainControl(method = "cv", number = 10, allowParallel = TRUE)
